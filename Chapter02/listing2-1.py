@@ -1,5 +1,5 @@
 # Print out a date, given year, month, and day as numbers
-
+import traceback
 months = [
     'January',
     'February',
@@ -24,11 +24,30 @@ year    = input('Year: ')
 month   = input('Month  (1-12): ')
 day     = input('Day (1-31): ')
 
-month_number = int(month)
-day_number = int(day)
+try:
+    month_number = int(month)
+except Exception as e:
+    print('month error ,using default 12')
+    traceback.print_exc()
+    month_number =12
+
+try:
+    day_number = int(day)
+except Exception as e:
+    print('day error ,using default 30')
+    traceback.print_exc()
+    day_number =30
 
 # Remember to subtract 1 from month and day to get a correct index
-month_name = months[month_number-1]
-ordinal = day + endings[day_number-1]
+try:
+    month_name = months[month_number-1]
+except :
+    month_number=12
+    month_name = months[month_number-1]
 
+try:
+    ordinal = str(day_number) + endings[day_number-1]
+except :
+    day_number=30
+    ordinal = str(day_number) + endings[day_number-1]
 print(month_name + ' ' + ordinal + ', ' + year)
