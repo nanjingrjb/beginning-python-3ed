@@ -39,11 +39,16 @@ except Exception as e:
     day_number =30
 
 # Remember to subtract 1 from month and day to get a correct index
+<<<<<<< HEAD
 try:
     month_name = months[month_number-1]
 except :
     month_number=12
     month_name = months[month_number-1]
+=======
+month_name = months[month_number-1]
+ordinal = str(day_number) + endings[day_number-1]
+>>>>>>> 60c4f6405fe454c1488f5f570eb6eef8887b9f47
 
 try:
     ordinal = str(day_number) + endings[day_number-1]
