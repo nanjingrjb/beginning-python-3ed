@@ -18,7 +18,13 @@ people = {
     'Cecil': {
         'phone': '3158',
         'addr': 'Baz avenue 90'
+    },
+    
+    'rjb':{
+        'phone':13776603610,
+        'addr':'ruijinlu8'
     }
+    
 
 }
 
