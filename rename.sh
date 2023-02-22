@@ -10,7 +10,7 @@ echo 'error'
 fi
 
 ay='str-yu'
-if [[ $ay =~ .*yu.* ]]; then
+if [[ 'you-yul' =~ .*yu.* ]]; then
 echo 'yes'
 else
 echo 'no'
@@ -27,7 +27,7 @@ for i in `ls`
 do  
    if [[ $i =~ .*Chapter.* ]];
    then
-	   echo 'enter dir ' $i
+	   #echo 'enter dir ' $i
 	   cd ./$i
 	   for j in `ls`
             do
