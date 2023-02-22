@@ -25,9 +25,17 @@ fi
 
 for i in `ls`
 do  
-if [[ $i =~ .*-.* ]]; then
-mv $i  ${i/-/_}
-else
-echo 'no'
-fi
+   if [[ $i =~ .*Chapter.* ]];
+   then
+	   echo 'enter dir ' $i
+	   cd ./$i
+	   for j in `ls`
+            do
+		    if [[ $j =~ .*-.* ]]; then
+                    mv $j  ${j/-/_}
+		    #echo ${j/-/_}
+                    fi
+            done
+	    cd ../
+   fi	    
 done
