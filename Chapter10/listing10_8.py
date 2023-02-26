@@ -36,7 +36,7 @@ def enter_command():
     return cmd
 
 def main():
-    database = shelve.open('C:\\database.dat') # You may want to change this name
+    database = shelve.open('./database') # You may want to change this name
     try:
         while True:
             cmd = enter_command()
@@ -51,4 +51,4 @@ def main():
     finally:
         database.close()
 
-if name == '__main__': main()
+if __name__ == '__main__': main()
