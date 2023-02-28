@@ -1,10 +1,11 @@
 from configparser import ConfigParser
 
-CONFIGFILE = "area.ini"
+CONFIGFILE = "listing19_1.cfg"
 
 config = ConfigParser()
 # Read the configuration file:
-config.read(CONFIGFILE)
+cont=config.read(CONFIGFILE)
+print(config)
 
 # Print out an initial greeting;
 # 'messages' is the section to look in:
