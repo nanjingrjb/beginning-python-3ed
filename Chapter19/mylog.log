@@ -1,0 +1,30 @@
+INFO:root:Starting program
+INFO:root:Trying to divide 1 by 0
+INFO:root:Starting program
+INFO:root:Trying to divide 1 by 0
+INFO:root:Starting program
+INFO:root:Trying to divide 1 by 0
+INFO:root:The division succeeded
+INFO:root:Ending program
+INFO:root:Starting program
+INFO:root:Trying to divide 1 by 0
+INFO:root:The division succeeded
+INFO:root:Ending program
+INFO:root:Starting program
+INFO:root:Trying to divide 1 by 0
+INFO:root:发生异常，信息为:
+INFO:root:The division succeeded
+INFO:root:Ending program
+INFO:root:Starting program
+INFO:root:Trying to divide 1 by 0
+INFO:root:发生异常，信息为:
+INFO:root:division by zero
+INFO:root:The division succeeded
+INFO:root:Ending program
+INFO:root:Starting program
+INFO:root:Trying to divide 1 by 0
+INFO:root:Starting program
+INFO:root:Trying to divide 1 by 0
+INFO:root:发生异常，信息为:division by zero
+INFO:root:The division succeeded
+INFO:root:Ending program
