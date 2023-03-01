@@ -4,7 +4,8 @@ from reportlab.graphics.charts.lineplots import LinePlot
 from reportlab.graphics.charts.textlabels import Label
 from reportlab.graphics import renderPDF
 
-URL = 'ftp://ftp.swpc.noaa.gov/pub/weekly/Predict.txt'
+#由于此网址发生变化，原来的数据解析，不可读取了，可以再研究如何读取网页的数据
+URL = 'https://www.swpc.noaa.gov/products/predicted-sunspot-number-and-radio-flux'
 COMMENT_CHARS = '#:'
 
 
